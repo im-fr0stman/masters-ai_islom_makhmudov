@@ -1,0 +1,124 @@
+# Streamlit Tools & Features
+
+This document explains the Streamlit tools and features used in the AI Data Assistant project.
+
+---
+
+## 📌 **1. Page Configuration**
+Streamlit allows you to set the page title, favicon, and layout.
+
+```python
+st.set_page_config(page_title="AI Data Assistant", page_icon="🌍", layout="wide")
+```
+🔹 **Usage:** Defines the page's title, favicon, and enables a wide layout for better UI.
+
+---
+
+## 📌 **2. Markdown for Custom Styling**
+To enhance UI design, Streamlit supports Markdown and HTML.
+
+```python
+st.markdown(
+    """
+    <style>
+        .title-text {
+            font-size: 36px;
+            font-weight: bold;
+            color: white;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+```
+🔹 **Usage:** Adds custom styling for text elements.
+
+---
+
+## 📌 **3. Sidebar Navigation**
+Streamlit's sidebar feature enables easy navigation.
+
+```python
+st.sidebar.header("Navigation")
+page = st.sidebar.radio("Go to", ["Chat", "External Data", "Settings"])
+```
+🔹 **Usage:** Allows users to switch between different sections of the app.
+
+---
+
+## 📌 **4. User Input Fields**
+Text input fields for user interaction.
+
+```python
+name = st.text_input("Enter your name:")
+email = st.text_input("Enter your email:")
+```
+🔹 **Usage:** Collects user information before submitting a query.
+
+---
+
+## 📌 **5. Text Area for Queries**
+A large text area for user input.
+
+```python
+user_input = st.text_area("Enter your query:")
+```
+🔹 **Usage:** Allows users to type long queries easily.
+
+---
+
+## 📌 **6. Checkbox for Email Option**
+Gives users the choice to receive responses via email.
+
+```python
+send_email = st.checkbox("Send response to email")
+```
+🔹 **Usage:** Adds an optional feature for email responses.
+
+---
+
+## 📌 **7. Button for Submission**
+A simple submit button to process the query.
+
+```python
+if st.button("Submit"):
+    if user_input:
+        response = analyze_question(user_input)
+        st.subheader("Response:")
+        st.write(response)
+        if send_email:
+            st.success("Response will be sent to your email.")
+    else:
+        st.warning("Please enter a query.")
+```
+🔹 **Usage:** Triggers the assistant’s response generation.
+
+---
+
+## 📌 **8. JSON Display for External API Data**
+Displays API response in JSON format.
+
+```python
+if st.button("Fetch Data"):
+    if query:
+        data = fetch_external_data({"query": query})
+        st.subheader("API Response:")
+        st.json(data)
+```
+🔹 **Usage:** Shows structured data fetched from an external API.
+
+---
+
+## 📌 **9. Radio Buttons for Theme Selection**
+Allows users to switch between themes.
+
+```python
+theme = st.radio("Select Theme", ["Light", "Dark"])
+st.write(f"Selected Theme: {theme}")
+```
+🔹 **Usage:** Enables dynamic UI customization.
+
+---
+
+## 🎯 **Conclusion**
+These Streamlit tools help build an interactive, user-friendly AI Data Assistant UI. Modify and expand them based on your project’s needs!
