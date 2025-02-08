@@ -1,0 +1,116 @@
+2025-02-07 16:38:23,245 - INFO - HTTP Request: POST https://api.openai.com/v1/assistants "HTTP/1.1 200 OK"
+2025-02-07 16:38:23,262 - INFO - Assistant Created: Database Analyst (ID: asst_jlsy0fPBaCVLiTUFVLNkG97k)
+2025-02-07 16:38:24,131 - INFO - Application started.
+2025-02-07 16:38:34,749 - INFO - Application started.
+2025-02-07 16:38:34,796 - INFO - Ignored error after process had died: OSError(9, 'The handle is invalid', None, 6, None)
+2025-02-07 16:38:34,797 - INFO - Ignored error after process had died: OSError(9, 'The handle is invalid', None, 6, None)
+2025-02-07 16:38:35,713 - INFO - Application started.
+2025-02-07 16:38:37,168 - INFO - Application started.
+2025-02-07 16:38:37,547 - INFO - Application started.
+2025-02-07 16:38:59,672 - INFO - Application started.
+2025-02-07 16:38:59,744 - INFO - Application started.
+2025-02-07 16:39:00,245 - INFO - HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2025-02-07 16:39:00,612 - INFO - HTTP Request: POST https://api.openai.com/v1/threads/thread_ZoHafqn0pcXxhs2cDrFxjNQr/messages "HTTP/1.1 200 OK"
+2025-02-07 16:39:02,027 - INFO - HTTP Request: POST https://api.openai.com/v1/threads/thread_ZoHafqn0pcXxhs2cDrFxjNQr/runs "HTTP/1.1 200 OK"
+2025-02-07 16:39:02,396 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_ZoHafqn0pcXxhs2cDrFxjNQr/runs/run_PKSuKZxELJSjqt4CFZOLjMhy "HTTP/1.1 200 OK"
+2025-02-07 16:39:02,755 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_ZoHafqn0pcXxhs2cDrFxjNQr/runs/run_PKSuKZxELJSjqt4CFZOLjMhy "HTTP/1.1 200 OK"
+2025-02-07 16:39:03,166 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_ZoHafqn0pcXxhs2cDrFxjNQr/runs/run_PKSuKZxELJSjqt4CFZOLjMhy "HTTP/1.1 200 OK"
+2025-02-07 16:39:03,548 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_ZoHafqn0pcXxhs2cDrFxjNQr/runs/run_PKSuKZxELJSjqt4CFZOLjMhy "HTTP/1.1 200 OK"
+2025-02-07 16:39:03,935 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_ZoHafqn0pcXxhs2cDrFxjNQr/runs/run_PKSuKZxELJSjqt4CFZOLjMhy "HTTP/1.1 200 OK"
+2025-02-07 16:39:04,306 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_ZoHafqn0pcXxhs2cDrFxjNQr/messages "HTTP/1.1 200 OK"
+2025-02-07 16:59:04,277 - INFO - Application started.
+2025-02-07 16:59:05,093 - INFO - HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2025-02-07 16:59:05,412 - INFO - HTTP Request: POST https://api.openai.com/v1/threads/thread_Nxsofr3nRx5JmrPTi0ygDApZ/messages "HTTP/1.1 200 OK"
+2025-02-07 16:59:06,270 - INFO - HTTP Request: POST https://api.openai.com/v1/threads/thread_Nxsofr3nRx5JmrPTi0ygDApZ/runs "HTTP/1.1 200 OK"
+2025-02-07 16:59:06,788 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_Nxsofr3nRx5JmrPTi0ygDApZ/runs/run_RhnieSYBHiJ8W5Kphrwhuki3 "HTTP/1.1 200 OK"
+2025-02-07 16:59:07,130 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_Nxsofr3nRx5JmrPTi0ygDApZ/runs/run_RhnieSYBHiJ8W5Kphrwhuki3 "HTTP/1.1 200 OK"
+2025-02-07 16:59:07,507 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_Nxsofr3nRx5JmrPTi0ygDApZ/runs/run_RhnieSYBHiJ8W5Kphrwhuki3 "HTTP/1.1 200 OK"
+2025-02-07 16:59:07,877 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_Nxsofr3nRx5JmrPTi0ygDApZ/runs/run_RhnieSYBHiJ8W5Kphrwhuki3 "HTTP/1.1 200 OK"
+2025-02-07 16:59:08,216 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_Nxsofr3nRx5JmrPTi0ygDApZ/runs/run_RhnieSYBHiJ8W5Kphrwhuki3 "HTTP/1.1 200 OK"
+2025-02-07 16:59:08,611 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_Nxsofr3nRx5JmrPTi0ygDApZ/runs/run_RhnieSYBHiJ8W5Kphrwhuki3 "HTTP/1.1 200 OK"
+2025-02-07 16:59:09,043 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_Nxsofr3nRx5JmrPTi0ygDApZ/runs/run_RhnieSYBHiJ8W5Kphrwhuki3 "HTTP/1.1 200 OK"
+2025-02-07 16:59:09,436 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_Nxsofr3nRx5JmrPTi0ygDApZ/runs/run_RhnieSYBHiJ8W5Kphrwhuki3 "HTTP/1.1 200 OK"
+2025-02-07 16:59:09,795 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_Nxsofr3nRx5JmrPTi0ygDApZ/runs/run_RhnieSYBHiJ8W5Kphrwhuki3 "HTTP/1.1 200 OK"
+2025-02-07 16:59:10,323 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_Nxsofr3nRx5JmrPTi0ygDApZ/runs/run_RhnieSYBHiJ8W5Kphrwhuki3 "HTTP/1.1 200 OK"
+2025-02-07 16:59:10,698 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_Nxsofr3nRx5JmrPTi0ygDApZ/runs/run_RhnieSYBHiJ8W5Kphrwhuki3 "HTTP/1.1 200 OK"
+2025-02-07 16:59:11,045 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_Nxsofr3nRx5JmrPTi0ygDApZ/runs/run_RhnieSYBHiJ8W5Kphrwhuki3 "HTTP/1.1 200 OK"
+2025-02-07 16:59:11,378 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_Nxsofr3nRx5JmrPTi0ygDApZ/runs/run_RhnieSYBHiJ8W5Kphrwhuki3 "HTTP/1.1 200 OK"
+2025-02-07 16:59:11,735 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_Nxsofr3nRx5JmrPTi0ygDApZ/runs/run_RhnieSYBHiJ8W5Kphrwhuki3 "HTTP/1.1 200 OK"
+2025-02-07 16:59:12,162 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_Nxsofr3nRx5JmrPTi0ygDApZ/runs/run_RhnieSYBHiJ8W5Kphrwhuki3 "HTTP/1.1 200 OK"
+2025-02-07 16:59:12,531 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_Nxsofr3nRx5JmrPTi0ygDApZ/runs/run_RhnieSYBHiJ8W5Kphrwhuki3 "HTTP/1.1 200 OK"
+2025-02-07 16:59:12,891 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_Nxsofr3nRx5JmrPTi0ygDApZ/runs/run_RhnieSYBHiJ8W5Kphrwhuki3 "HTTP/1.1 200 OK"
+2025-02-07 16:59:13,239 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_Nxsofr3nRx5JmrPTi0ygDApZ/runs/run_RhnieSYBHiJ8W5Kphrwhuki3 "HTTP/1.1 200 OK"
+2025-02-07 16:59:13,551 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_Nxsofr3nRx5JmrPTi0ygDApZ/messages "HTTP/1.1 200 OK"
+2025-02-07 17:15:15,578 - INFO - Application started.
+2025-02-07 17:15:16,196 - INFO - Application started.
+2025-02-07 17:15:20,405 - INFO - Application started.
+2025-02-07 17:15:37,155 - INFO - Application started.
+2025-02-07 17:15:38,891 - INFO - Application started.
+2025-02-07 17:15:41,209 - INFO - Application started.
+2025-02-07 17:22:56,238 - INFO - HTTP Request: POST https://api.openai.com/v1/assistants "HTTP/1.1 200 OK"
+2025-02-07 17:22:56,238 - INFO - Assistant Created: Database Analyst (ID: asst_zocN9yyo2Cg5kCHRDVnUkpeT)
+2025-02-07 17:22:56,253 - INFO - Application started.
+2025-02-07 17:23:32,381 - INFO - Application started.
+2025-02-07 17:23:33,218 - INFO - Application started.
+2025-02-07 17:23:37,603 - INFO - Application started.
+2025-02-07 17:23:38,396 - INFO - Application started.
+2025-02-07 18:46:51,900 - INFO - Application started.
+2025-02-07 18:46:52,276 - INFO - Application started.
+2025-02-07 18:46:52,971 - INFO - HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2025-02-07 18:46:53,642 - INFO - HTTP Request: POST https://api.openai.com/v1/threads/thread_QI0b3Styn1xPfKGIykb9PNvU/messages "HTTP/1.1 200 OK"
+2025-02-07 18:46:54,678 - INFO - HTTP Request: POST https://api.openai.com/v1/threads/thread_QI0b3Styn1xPfKGIykb9PNvU/runs "HTTP/1.1 200 OK"
+2025-02-07 18:46:55,093 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_QI0b3Styn1xPfKGIykb9PNvU/runs/run_1aIexfy0sDYFUD47GLxh3Zce "HTTP/1.1 200 OK"
+2025-02-07 18:46:55,475 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_QI0b3Styn1xPfKGIykb9PNvU/runs/run_1aIexfy0sDYFUD47GLxh3Zce "HTTP/1.1 200 OK"
+2025-02-07 18:46:55,851 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_QI0b3Styn1xPfKGIykb9PNvU/runs/run_1aIexfy0sDYFUD47GLxh3Zce "HTTP/1.1 200 OK"
+2025-02-07 18:46:56,235 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_QI0b3Styn1xPfKGIykb9PNvU/runs/run_1aIexfy0sDYFUD47GLxh3Zce "HTTP/1.1 200 OK"
+2025-02-07 18:46:56,604 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_QI0b3Styn1xPfKGIykb9PNvU/runs/run_1aIexfy0sDYFUD47GLxh3Zce "HTTP/1.1 200 OK"
+2025-02-07 18:46:56,971 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_QI0b3Styn1xPfKGIykb9PNvU/runs/run_1aIexfy0sDYFUD47GLxh3Zce "HTTP/1.1 200 OK"
+2025-02-07 18:46:57,326 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_QI0b3Styn1xPfKGIykb9PNvU/runs/run_1aIexfy0sDYFUD47GLxh3Zce "HTTP/1.1 200 OK"
+2025-02-07 18:46:57,763 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_QI0b3Styn1xPfKGIykb9PNvU/runs/run_1aIexfy0sDYFUD47GLxh3Zce "HTTP/1.1 200 OK"
+2025-02-07 18:46:58,156 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_QI0b3Styn1xPfKGIykb9PNvU/runs/run_1aIexfy0sDYFUD47GLxh3Zce "HTTP/1.1 200 OK"
+2025-02-07 18:46:58,558 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_QI0b3Styn1xPfKGIykb9PNvU/runs/run_1aIexfy0sDYFUD47GLxh3Zce "HTTP/1.1 200 OK"
+2025-02-07 18:46:58,956 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_QI0b3Styn1xPfKGIykb9PNvU/runs/run_1aIexfy0sDYFUD47GLxh3Zce "HTTP/1.1 200 OK"
+2025-02-07 18:46:59,274 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_QI0b3Styn1xPfKGIykb9PNvU/messages "HTTP/1.1 200 OK"
+2025-02-07 18:48:05,064 - INFO - Application started.
+2025-02-07 18:48:05,111 - INFO - Application started.
+2025-02-07 18:48:05,588 - INFO - HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2025-02-07 18:48:05,896 - INFO - HTTP Request: POST https://api.openai.com/v1/threads/thread_yPxZBrR7sXE0tepOcF9zlHky/messages "HTTP/1.1 200 OK"
+2025-02-07 18:48:06,689 - INFO - HTTP Request: POST https://api.openai.com/v1/threads/thread_yPxZBrR7sXE0tepOcF9zlHky/runs "HTTP/1.1 200 OK"
+2025-02-07 18:48:07,089 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_yPxZBrR7sXE0tepOcF9zlHky/runs/run_GaPCyAHzSu6bXiAi4Z2VFrsr "HTTP/1.1 200 OK"
+2025-02-07 18:48:07,416 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_yPxZBrR7sXE0tepOcF9zlHky/runs/run_GaPCyAHzSu6bXiAi4Z2VFrsr "HTTP/1.1 200 OK"
+2025-02-07 18:48:07,790 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_yPxZBrR7sXE0tepOcF9zlHky/runs/run_GaPCyAHzSu6bXiAi4Z2VFrsr "HTTP/1.1 200 OK"
+2025-02-07 18:48:08,104 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_yPxZBrR7sXE0tepOcF9zlHky/runs/run_GaPCyAHzSu6bXiAi4Z2VFrsr "HTTP/1.1 200 OK"
+2025-02-07 18:48:08,488 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_yPxZBrR7sXE0tepOcF9zlHky/runs/run_GaPCyAHzSu6bXiAi4Z2VFrsr "HTTP/1.1 200 OK"
+2025-02-07 18:48:08,832 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_yPxZBrR7sXE0tepOcF9zlHky/messages "HTTP/1.1 200 OK"
+2025-02-07 18:48:18,976 - INFO - Application started.
+2025-02-07 18:50:21,106 - INFO - HTTP Request: POST https://api.openai.com/v1/assistants "HTTP/1.1 200 OK"
+2025-02-07 18:50:21,106 - INFO - Assistant Created: Database Analyst (ID: asst_yQjVa0iwDDjYErjGogg3wVe7)
+2025-02-07 18:50:21,108 - INFO - Application started.
+2025-02-07 18:53:26,305 - INFO - HTTP Request: POST https://api.openai.com/v1/assistants "HTTP/1.1 200 OK"
+2025-02-07 18:53:26,305 - INFO - Assistant Created: Database Analyst (ID: asst_YkF9v9zlmReptIfMbPTFrIgX)
+2025-02-07 18:53:26,305 - INFO - Application started.
+2025-02-07 19:12:22,465 - INFO - Application started.
+2025-02-07 19:12:27,668 - INFO - Application started.
+2025-02-07 19:12:28,407 - INFO - Application started.
+2025-02-07 19:12:29,022 - INFO - Application started.
+2025-02-07 19:12:35,780 - INFO - Application started.
+2025-02-07 19:13:39,179 - INFO - Application started.
+2025-02-07 19:13:52,404 - INFO - Application started.
+2025-02-07 19:37:14,188 - INFO - Application started.
+2025-02-07 19:37:38,865 - INFO - Application started.
+2025-02-07 19:37:39,570 - INFO - Application started.
+2025-02-07 19:37:44,434 - INFO - Application started.
+2025-02-07 19:38:04,611 - INFO - Application started.
+2025-02-07 19:38:04,708 - INFO - Application started.
+2025-02-07 19:38:05,600 - INFO - HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2025-02-07 19:38:05,958 - INFO - HTTP Request: POST https://api.openai.com/v1/threads/thread_bhAbdxaKCDOQkgCcg8yOmnFR/messages "HTTP/1.1 200 OK"
+2025-02-07 19:38:07,035 - INFO - HTTP Request: POST https://api.openai.com/v1/threads/thread_bhAbdxaKCDOQkgCcg8yOmnFR/runs "HTTP/1.1 200 OK"
+2025-02-07 19:38:07,567 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_bhAbdxaKCDOQkgCcg8yOmnFR/runs/run_5zeUhzV1nytMrDLxcjs4AnXP "HTTP/1.1 200 OK"
+2025-02-07 19:38:07,942 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_bhAbdxaKCDOQkgCcg8yOmnFR/runs/run_5zeUhzV1nytMrDLxcjs4AnXP "HTTP/1.1 200 OK"
+2025-02-07 19:38:08,356 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_bhAbdxaKCDOQkgCcg8yOmnFR/runs/run_5zeUhzV1nytMrDLxcjs4AnXP "HTTP/1.1 200 OK"
+2025-02-07 19:38:08,791 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_bhAbdxaKCDOQkgCcg8yOmnFR/runs/run_5zeUhzV1nytMrDLxcjs4AnXP "HTTP/1.1 200 OK"
+2025-02-07 19:38:09,158 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_bhAbdxaKCDOQkgCcg8yOmnFR/runs/run_5zeUhzV1nytMrDLxcjs4AnXP "HTTP/1.1 200 OK"
+2025-02-07 19:38:09,492 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_bhAbdxaKCDOQkgCcg8yOmnFR/runs/run_5zeUhzV1nytMrDLxcjs4AnXP "HTTP/1.1 200 OK"
+2025-02-07 19:38:09,820 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_bhAbdxaKCDOQkgCcg8yOmnFR/runs/run_5zeUhzV1nytMrDLxcjs4AnXP "HTTP/1.1 200 OK"
+2025-02-07 19:38:10,173 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_bhAbdxaKCDOQkgCcg8yOmnFR/runs/run_5zeUhzV1nytMrDLxcjs4AnXP "HTTP/1.1 200 OK"
+2025-02-07 19:38:10,447 - INFO - HTTP Request: GET https://api.openai.com/v1/threads/thread_bhAbdxaKCDOQkgCcg8yOmnFR/messages "HTTP/1.1 200 OK"

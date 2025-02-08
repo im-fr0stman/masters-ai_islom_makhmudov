@@ -1,0 +1,202 @@
+Good evening, guys.
+Evening.
+Hello.
+Do you choose Mr.
+Sturgis all or not yet?
+Is there anyone who hasn't sent out?
+Maybe two, three minutes ago.
+Today's lecture.
+Today's the deadline, yeah?
+By the way, do we have strict deadlines for homework, guys?
+No.
+Isn't it that strict?
+No, no, no, it's not strict.
+But I would suggest to find at least like 10 to 15 minutes every day how I am doing.
+Because when it will come at the end, it will be like everything.
+So at least I'm just trying to find 10, 15, 20 minutes doing like by small, small, small parts.
+Then every day.
+Homework from this course or from others?
+Any, I think.
+Other courses, I think, didn't give you homework yet, yeah?
+They give it, they give it.
+Data, data processing, they gave, it gave, he gave yesterday, I think, this file format.
+I, yesterday, I missed the class yesterday.
+I will watch it today.
+Hey, guys.
+Hello, Italy.
+Hello, Italy.
+How are you doing?
+I have a question about the future.
+If you see, two days ago, Google introduced quantum computers.
+Yeah.
+In our second lesson, you said that there is a problem with the model because they have a resource problem.
+And what will be in the future about it?
+Because if Google, if we have, they have quantum computers, then they have a huge resource.
+And how they will change.
+Yeah.
+So that's, that's really good.
+That's an interesting question.
+So I didn't know how they work, like on the very general concept of these qubits.
+I still, you know, I've been studying quantum physics in university, like, at least one year, probably two years.
+I can't remember.
+You know, a lot of electronics works on quantum effects.
+So, for example, some, some stuff allows the electrons to jump the barrier.
+But they, like, actually cannot jump.
+So they, like, tunneling through that.
+And no one knows, like, how it works.
+But it works.
+And we use it in TVs and smartphones.
+And that's it.
+Like, some kind of, some kind of magic.
+So it's still, I think there should be some kind of scientific explanation.
+But I didn't know, like, how these quantum computers work.
+I don't understand the concept of, like, something having the value of zero and one at the same time.
+Because, like, okay, you can imagine that.
+But how about the storage, right?
+So if you talk about, like, HDD or SSD, any storage, so you need to write it.
+And you need to, like, you should be able to read it in the future.
+And the most fear, like, two fears I remember, like, from the community regarding quantum computers is, okay, if they are so, like, powerful.
+And can make, like, much more, like, I don't know, millions times computations per second.
+So what about the encryption, right?
+So RSA or any other encryption algorithm.
+So basically encryption works, like, modern encryption works on the very basic example.
+Like, there are, how it's called, like, one-way function in math.
+I don't know how it's in English.
+So the way, like, it's very easy to calculate this.
+For example, it's very easy to multiply two prime integers and get the result.
+But it's super hard to understand, like, what are the integers you multiplied if you received, like, this result.
+And a lot of encryption is based on that.
+And actually Bitcoin is based on that.
+So Bitcoin has several, like, Bitcoin has a lot of protocols inside.
+Like, technologies, and most of them are, like, top-tier encryption we have right now.
+So if Google can beat that, so they can possibly, like, hijack all the new Bitcoins.
+Maybe they can rewrite the whole Bitcoin, like, the whole blockchain, like, in a day.
+And, I don't know, like, steal all the Bitcoins from us.
+So a lot of, like, military applications, like, all this encryption and networking.
+So, I don't know.
+It's technically possible that, yeah, such technology can appear.
+But taking into account how much time and money and resources and smart people it takes to build such thing.
+So maybe the first country which builds it, I don't know, like, will create some kind of, like, snow crash.
+Like, from cyberpunk books.
+I don't know.
+So, we'll see.
+At least, like, I know, like, from what I understand, like, IT history and technology history.
+Like, all the new, like, top-tier technologies, they have, like, two applications.
+Like, the two industries basically driving them fast and, like, making them broadly available is porn industry and military.
+So, this is, like, two things usually picking up the latest tech and trying to get, like, money of that.
+And maybe one of them will pick it up.
+I don't know.
+Maybe military first.
+So, we're going to see the new applications of quantum stuff.
+Yeah, but from personal perspective, like, being a human, like, I don't know, like, IT guy.
+So, yeah, that's interesting.
+But unless I cannot benefit from that, unless I cannot, like, earn money doing that.
+So, it's inevitable for me.
+Like, the sun.
+The sun just can stop.
+I don't know.
+Like, okay, bad example because the earth rotates across the sun.
+So, the earth can just stop rotating and it will be an infinite night for me.
+So, I can't do anything about that.
+I can't do anything about rain.
+So, what I can do is just to buy the umbrella or, I don't know, pray the rain stops sometime.
+And in case I have the problem or something I cannot influence, I think it's good not to worry about it.
+Because if you worry about something you cannot change, that's bad.
+So, you spent a lot of resources and the result will be nothing, like, for sure.
+So, my plan is just read the news, I don't know, follow this agenda, but don't worry about it.
+Okay.
+Yeah, let's get down to business.
+So, let me try to open my schedule.
+I had to reboot my PC today, so I lost this Excel spreadsheet.
+Okay, this one.
+Okay, so, the good news.
+Good news, we are on track, right?
+And here we are, meeting number five.
+So, today we're going to discuss Whisper API and local installation.
+The bad news, I took a look at some of the homeworks, like, two or three, maybe five, but not, like, very high level.
+I like the blog posts you guys made, so I like the pictures, and I think I will share some of my favorite pictures next time.
+So, I assume I will need this weekend to check them and probably to, I don't know, like, set some marks or something like that.
+So, just give me some time, but I haven't found any, like, critical problems there.
+So, just remember to share the workflow, how you did that, like, for the first task.
+So, I need to see, like, what prompts you've been using.
+And don't forget about the pictures, so the pictures are necessary for our blog post.
+So, I think we're going to focus on that, probably, either on this lecture or this one.
+We don't have time to review the homework.
+So, today we're going to discuss the Whisper API, and this is very, let me show the slides.
+So, here are the slides for today.
+So, what is the Whisper, and why are we discussing that?
+So, mostly when people discuss the generative AI or AI in general, so they focus on, like, LLMs, I don't know, like, compilers, functions, and stuff like that.
+So, everything that works with text, right, because it has more application to the business when you work with text.
+But still, usually what is being forgotten is images and audio processing.
+And regarding the images, I can't say it's, like, easier to monetize this, so not too much business applications.
+So, I know a lot of cases where clients came to us, like, to EPAM and asked to create something.
+Like, I don't know, maybe I read over a hundred of cases.
+And only several of them were related to image generation.
+But some of them, like, more of these cases are related to audio.
+One of the usual, like, requests is, okay, guys, we have 5,000 hours of recordings of, I don't know, meetings or customers calling us for the support.
+So, we need to understand this data, right?
+So, imagine you have a first-line support, like, people calling, like, real users calling, describing the issue, and the operators are just sharing.
+So, what should you do to solve it?
+And you need to control it somehow, right?
+So, you need to see what are the most popular questions or what are the answers.
+So, is the client happy or not, right?
+And for this case, you need to voice processing.
+Processing the voice is actually very old technology.
+I don't remember how old it is, but, like, two things here usually working is text-to-speech and speech-to-text.
+And if we check, I don't know, like, let's check Azure text-to-speech.
+Okay, it's AI speech now.
+All right, I got it.
+Everything is AI now.
+Let me check the pricing, actually.
+DTS pricing.
+It's super cheap.
+It's super cheap.
+Okay, I think here.
+So, this is, okay, free tier, all right.
+All right, delete this one.
+So, speech-to-text.
+So, in order to transcript something, like, if you have a phone call, real-time transcription, $1 per hour, that's too much.
+Okay, batch transcription.
+So, if I have a lot of audio calls, I don't know, like, 100, I can post them as a batch, and this will result in 80 cents per hour.
+So, not too much, actually.
+Yeah, as usually, like, Microsoft has, like, very complicated stuff for billing, so it's hard to understand how much you will spend.
+Yeah, and here is, like, the text-to-speech.
+So, basically, two directions.
+Like, from speech, you can extract text, and from text, you can generate speech, right?
+And this is, like, the standard voice.
+I think this standard voice become neural, like, during, like, last year, because previously, they had different, they had a different pricing.
+So, like, the standard voice is, like, this robotized voice you usually hear when you call a bank or something, and neural voice is, like, more pleasant, more realistically, more naturally toned.
+So, right now, I don't think, they should have some kind of, like, cheap voice, like this old cheap voice.
+Probably, it's inside the Azure AI studio, but the check is not expensive, right?
+So, one million characters is, like, it's a lot.
+$15 for business, it's, like, well, not too much, I think.
+So, and in case we have 1,000 of, like, phone calls transcripted, so it will result as only, like, less than $200.
+That's acceptable for that.
+And they definitely use machine learning there, right?
+So, because there's no way programmatically, like, algorithmically to transcribe the speech.
+But still, the interesting thing here is it's also possible to use machine learning techniques and all this concept of token we've been discussing previously, right?
+In working with speech and understanding the speech.
+And the project, the project I would like to show you, this Whisper, so let me find, it should be here in the notes I put.
+Yeah, this one.
+It was introduced very similar once the chat GPT arrived, right?
+So, I'm just trying to recognize, what was the time when chat GPT released?
+Okay, chat GPT released.
+Okay, November 30, all right, 2022.
+Yeah, so they introduced Whisper, like, a couple of months before chat GPT.
+And to know what happens, like, do you remember this movie, 13th Floor?
+This one.
+So, do you know this movie, 13th Floor?
+It's kind of popular from scientific perspective, but they got the problem, right?
+So, this is the cyber, like, not so cyberpunk, but probably, like, interesting science fiction.
+But take a look at the release year, it's 1999.
+The problem is that in 1999, this movie gets out, Matrix.
+And that's why, like, everyone knows about the Matrix.
+It was, like, a very successful movie.
+And this is the reason much more less people know that this movie, 13th Floor, even exists.
+If they release it, like, a year previous, before Matrix, so much more success.
+So, the same as Whisper, right?
+So, chat GPT release, November 13, and Whisper, actually the same company, OpenVA, but it was not so hyped in September as it become in November, right?
+So, what they introduced is they actually have been working, like, at the same time, looks like they've been working at the Whisper in parallel, like, working with Shazoo PC, right?
+So, they reused the same, like, not the same, but similar architecture, like, encoders, decoders, and tokens to predict the tokens, but not from text, but from audio as well.
+So, they just take a look at the audio, right?
+And in the paper, so they share, like...
