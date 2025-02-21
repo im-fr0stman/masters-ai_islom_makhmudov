@@ -1,5 +1,0 @@
-openai
-streamlit
-requests
-sqlite3
-logging
