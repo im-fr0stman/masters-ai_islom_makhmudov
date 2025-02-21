@@ -1,0 +1,209 @@
+INFO:root:User Islom (im) asked: What database you posess right now?
+
+INFO:root:Executing query: SELECT * FROM countries LIMIT 10;
+INFO:root:User Islom (im) asked: Can you answer to all my questions?
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-20 19:58:27,039 - INFO - Application started successfully.
+2025-02-20 19:58:27,039 - INFO - Database schema loaded: 
+Table: countries
+Columns: Country, Region, Population, Area, Pop. Density, Coastline, Net migration, Infant mortality, GDP, Literacy, Phones, Arable, Crops, Climate, Birthrate, Deathrate, Agriculture, Industry,Service
+
+2025-02-20 19:58:28,966 - INFO - Sending API request with payload: {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': 'Top 10 countries by area'}], 'functions': [{'name': 'ask_database', 'description': 'Use this function to answer user questions about data. Output should be a fully formed SQL query.', 'parameters': {'type': 'object', 'properties': {'query': {'type': 'string', 'description': "\n                            SQL query extracting info to answer the user's question.\n                            SQL should be written using this database schema:\n                            \nTable: countries\nColumns: Country, Region, Population, Area, Pop. Density, Coastline, Net migration, Infant mortality, GDP, Literacy, Phones, Arable, Crops, Climate, Birthrate, Deathrate, Agriculture, Industry,Service\n\n                            The query should be returned in plain text, not in JSON.\n                            "}}, 'required': ['query']}}]}
+2025-02-20 19:58:31,170 - INFO - Received API response: 200
+2025-02-20 19:58:31,170 - INFO - Function generation requested, calling function
+2025-02-20 19:58:31,170 - INFO - Prepped query: {'query': 'SELECT Country, Area FROM countries ORDER BY Area DESC LIMIT 10'}
+2025-02-20 19:58:31,170 - INFO - Executing SQL query: SELECT Country, Area FROM countries ORDER BY Area DESC LIMIT 10
+2025-02-20 19:58:31,172 - INFO - Query executed successfully. Rows fetched: 10
+2025-02-20 19:58:31,172 - INFO - Sending API request with payload: {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': 'Top 10 countries by area'}, {'role': 'function', 'name': 'ask_database', 'content': "[('Russia ', 17075200), ('Canada ', 9984670), ('United States ', 9631420), ('China ', 9596960), ('Brazil ', 8511965), ('Australia ', 7686850), ('India ', 3287590), ('Argentina ', 2766890), ('Kazakhstan ', 2717300), ('Sudan ', 2505810)]"}]}
+2025-02-20 19:58:36,028 - INFO - Received API response: 200
+2025-02-20 19:59:12,822 - INFO - Sending API request with payload: {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': 'What is ai?'}], 'functions': [{'name': 'ask_database', 'description': 'Use this function to answer user questions about data. Output should be a fully formed SQL query.', 'parameters': {'type': 'object', 'properties': {'query': {'type': 'string', 'description': "\n                            SQL query extracting info to answer the user's question.\n                            SQL should be written using this database schema:\n                            \nTable: countries\nColumns: Country, Region, Population, Area, Pop. Density, Coastline, Net migration, Infant mortality, GDP, Literacy, Phones, Arable, Crops, Climate, Birthrate, Deathrate, Agriculture, Industry,Service\n\n                            The query should be returned in plain text, not in JSON.\n                            "}}, 'required': ['query']}}]}
+2025-02-20 19:59:15,577 - INFO - Received API response: 200
+2025-02-20 19:59:15,577 - INFO - Function not required, responding to user
+2025-02-20 20:13:44,145 - INFO - Application started successfully.
+2025-02-20 20:13:44,145 - INFO - Database schema loaded: 
+Table: countries
+Columns: Country, Region, Population, Area, Pop. Density, Coastline, Net migration, Infant mortality, GDP, Literacy, Phones, Arable, Crops, Climate, Birthrate, Deathrate, Agriculture, Industry,Service
+
+2025-02-20 20:13:44,146 - INFO - Streamlit UI started successfully.
+2025-02-20 20:13:47,423 - INFO - Streamlit UI started successfully.
+2025-02-20 20:13:48,264 - INFO - Streamlit UI started successfully.
+2025-02-20 20:14:04,061 - INFO - Streamlit UI started successfully.
+2025-02-20 20:14:04,107 - INFO - Streamlit UI started successfully.
+2025-02-20 20:14:04,109 - INFO - User query submitted: Top 5 countries by GDP?
+2025-02-20 20:14:04,109 - INFO - Sending API request with payload: {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': 'Top 5 countries by GDP?'}], 'functions': [{'name': 'ask_database', 'description': 'Use this function to answer user questions about data. Output should be a fully formed SQL query.', 'parameters': {'type': 'object', 'properties': {'query': {'type': 'string', 'description': "\n                            SQL query extracting info to answer the user's question.\n                            SQL should be written using this database schema:\n                            \nTable: countries\nColumns: Country, Region, Population, Area, Pop. Density, Coastline, Net migration, Infant mortality, GDP, Literacy, Phones, Arable, Crops, Climate, Birthrate, Deathrate, Agriculture, Industry,Service\n\n                            The query should be returned in plain text, not in JSON.\n                            "}}, 'required': ['query']}}]}
+2025-02-20 20:14:06,321 - INFO - Received API response: 200
+2025-02-20 20:14:06,321 - INFO - Function generation requested, calling function
+2025-02-20 20:14:06,321 - INFO - Prepped query: {'query': 'SELECT Country, GDP FROM countries ORDER BY GDP DESC LIMIT 5;'}
+2025-02-20 20:14:06,321 - INFO - Executing SQL query: SELECT Country, GDP FROM countries ORDER BY GDP DESC LIMIT 5;
+2025-02-20 20:14:06,323 - INFO - Query executed successfully. Rows fetched: 5
+2025-02-20 20:14:06,323 - INFO - Sending API request with payload: {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': 'Top 5 countries by GDP?'}, {'role': 'function', 'name': 'ask_database', 'content': "[('Western Sahara ', ''), ('Luxembourg ', 55100), ('Norway ', 37800), ('United States ', 37800), ('Bermuda ', 36000)]"}]}
+2025-02-20 20:14:09,814 - INFO - Received API response: 200
+2025-02-20 20:14:43,628 - INFO - Streamlit UI started successfully.
+2025-02-20 20:14:43,629 - INFO - User selected theme: Light
+2025-02-20 20:14:44,139 - INFO - Streamlit UI started successfully.
+2025-02-20 20:14:44,819 - INFO - Streamlit UI started successfully.
+2025-02-20 20:14:44,822 - INFO - User selected theme: Light
+2025-02-20 20:14:45,971 - INFO - Streamlit UI started successfully.
+2025-02-20 20:14:49,675 - INFO - Streamlit UI started successfully.
+2025-02-20 20:14:49,677 - INFO - User selected theme: Light
+2025-02-20 20:14:50,181 - INFO - Streamlit UI started successfully.
+2025-02-20 20:21:04,749 - INFO - Streamlit UI started successfully.
+2025-02-20 20:21:12,844 - INFO - Streamlit UI started successfully.
+2025-02-20 20:21:24,950 - INFO - Streamlit UI started successfully.
+2025-02-20 20:21:25,051 - INFO - Streamlit UI started successfully.
+2025-02-20 20:21:25,898 - INFO - Streamlit UI started successfully.
+2025-02-20 20:21:25,901 - INFO - User query submitted: Top 5 countries by population
+2025-02-20 20:21:25,902 - INFO - Sending API request with payload: {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': 'Top 5 countries by population'}], 'functions': [{'name': 'ask_database', 'description': 'Use this function to answer user questions about data. Output should be a fully formed SQL query.', 'parameters': {'type': 'object', 'properties': {'query': {'type': 'string', 'description': "\n                            SQL query extracting info to answer the user's question.\n                            SQL should be written using this database schema:\n                            \nTable: countries\nColumns: Country, Region, Population, Area, Pop. Density, Coastline, Net migration, Infant mortality, GDP, Literacy, Phones, Arable, Crops, Climate, Birthrate, Deathrate, Agriculture, Industry,Service\n\n                            The query should be returned in plain text, not in JSON.\n                            "}}, 'required': ['query']}}]}
+2025-02-20 20:21:27,977 - INFO - Received API response: 200
+2025-02-20 20:21:27,977 - INFO - Function generation requested, calling function
+2025-02-20 20:21:27,978 - INFO - Prepped query: {'query': 'SELECT Country, Population FROM countries ORDER BY Population DESC LIMIT 5;'}
+2025-02-20 20:21:27,978 - INFO - Executing SQL query: SELECT Country, Population FROM countries ORDER BY Population DESC LIMIT 5;
+2025-02-20 20:21:27,978 - INFO - Query executed successfully. Rows fetched: 5
+2025-02-20 20:21:27,978 - INFO - Sending API request with payload: {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': 'Top 5 countries by population'}, {'role': 'function', 'name': 'ask_database', 'content': "[('China ', 1313973713), ('India ', 1095351995), ('United States ', 298444215), ('Indonesia ', 245452739), ('Brazil ', 188078227)]"}]}
+2025-02-20 20:21:36,607 - INFO - Received API response: 200
+2025-02-20 20:21:36,615 - INFO - Response flagged to send to email: im.imakhmudov@gmail.com
+2025-02-21 09:33:28,841 - INFO - Application started successfully.
+2025-02-21 09:33:28,841 - INFO - Database schema loaded: 
+Table: countries
+Columns: Country, Region, Population, Area, Pop. Density, Coastline, Net migration, Infant mortality, GDP, Literacy, Phones, Arable, Crops, Climate, Birthrate, Deathrate, Agriculture, Industry,Service
+
+2025-02-21 09:33:28,841 - INFO - Streamlit UI started successfully.
+2025-02-21 09:33:32,326 - INFO - Streamlit UI started successfully.
+2025-02-21 09:33:42,917 - INFO - Streamlit UI started successfully.
+2025-02-21 09:34:00,811 - INFO - Streamlit UI started successfully.
+2025-02-21 09:34:00,924 - INFO - Streamlit UI started successfully.
+2025-02-21 09:34:00,927 - INFO - User query submitted: Top 10 countries by population
+2025-02-21 09:34:00,927 - INFO - Sending API request with payload: {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': 'Top 10 countries by population'}], 'functions': [{'name': 'ask_database', 'description': 'Use this function to answer user questions about data. Output should be a fully formed SQL query.', 'parameters': {'type': 'object', 'properties': {'query': {'type': 'string', 'description': "\n                            SQL query extracting info to answer the user's question.\n                            SQL should be written using this database schema:\n                            \nTable: countries\nColumns: Country, Region, Population, Area, Pop. Density, Coastline, Net migration, Infant mortality, GDP, Literacy, Phones, Arable, Crops, Climate, Birthrate, Deathrate, Agriculture, Industry,Service\n\n                            The query should be returned in plain text, not in JSON.\n                            "}}, 'required': ['query']}}]}
+2025-02-21 09:34:03,245 - INFO - Received API response: 200
+2025-02-21 09:34:03,248 - INFO - Function generation requested, calling function
+2025-02-21 09:34:03,248 - INFO - Prepped query: {'query': 'SELECT Country, Population FROM countries ORDER BY Population DESC LIMIT 10;'}
+2025-02-21 09:34:03,248 - INFO - Executing SQL query: SELECT Country, Population FROM countries ORDER BY Population DESC LIMIT 10;
+2025-02-21 09:34:03,276 - INFO - Query executed successfully. Rows fetched: 10
+2025-02-21 09:34:03,276 - INFO - Sending API request with payload: {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': 'Top 10 countries by population'}, {'role': 'function', 'name': 'ask_database', 'content': "[('China ', 1313973713), ('India ', 1095351995), ('United States ', 298444215), ('Indonesia ', 245452739), ('Brazil ', 188078227), ('Pakistan ', 165803560), ('Bangladesh ', 147365352), ('Russia ', 142893540), ('Nigeria ', 131859731), ('Japan ', 127463611)]"}]}
+2025-02-21 09:34:04,990 - INFO - Received API response: 200
+2025-02-21 09:35:07,457 - INFO - Streamlit UI started successfully.
+2025-02-21 09:36:01,230 - INFO - Streamlit UI started successfully.
+2025-02-21 09:36:01,232 - INFO - User query submitted: What is AI?
+2025-02-21 09:36:01,232 - INFO - Sending API request with payload: {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': 'What is AI?'}], 'functions': [{'name': 'ask_database', 'description': 'Use this function to answer user questions about data. Output should be a fully formed SQL query.', 'parameters': {'type': 'object', 'properties': {'query': {'type': 'string', 'description': "\n                            SQL query extracting info to answer the user's question.\n                            SQL should be written using this database schema:\n                            \nTable: countries\nColumns: Country, Region, Population, Area, Pop. Density, Coastline, Net migration, Infant mortality, GDP, Literacy, Phones, Arable, Crops, Climate, Birthrate, Deathrate, Agriculture, Industry,Service\n\n                            The query should be returned in plain text, not in JSON.\n                            "}}, 'required': ['query']}}]}
+2025-02-21 09:36:05,752 - INFO - Received API response: 200
+2025-02-21 09:36:05,752 - INFO - Function not required, responding to user
+2025-02-21 09:36:28,186 - INFO - Streamlit UI started successfully.
+2025-02-21 09:36:28,279 - INFO - Streamlit UI started successfully.
+2025-02-21 09:36:28,279 - INFO - User query submitted: Top 10 coontries by area
+2025-02-21 09:36:28,279 - INFO - Sending API request with payload: {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': 'Top 10 coontries by area'}], 'functions': [{'name': 'ask_database', 'description': 'Use this function to answer user questions about data. Output should be a fully formed SQL query.', 'parameters': {'type': 'object', 'properties': {'query': {'type': 'string', 'description': "\n                            SQL query extracting info to answer the user's question.\n                            SQL should be written using this database schema:\n                            \nTable: countries\nColumns: Country, Region, Population, Area, Pop. Density, Coastline, Net migration, Infant mortality, GDP, Literacy, Phones, Arable, Crops, Climate, Birthrate, Deathrate, Agriculture, Industry,Service\n\n                            The query should be returned in plain text, not in JSON.\n                            "}}, 'required': ['query']}}]}
+2025-02-21 09:36:29,345 - INFO - Received API response: 200
+2025-02-21 09:36:29,345 - INFO - Function generation requested, calling function
+2025-02-21 09:36:29,345 - INFO - Prepped query: {'query': 'SELECT Country FROM countries ORDER BY Area DESC LIMIT 10;'}
+2025-02-21 09:36:29,345 - INFO - Executing SQL query: SELECT Country FROM countries ORDER BY Area DESC LIMIT 10;
+2025-02-21 09:36:29,345 - INFO - Query executed successfully. Rows fetched: 10
+2025-02-21 09:36:29,345 - INFO - Sending API request with payload: {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': 'Top 10 coontries by area'}, {'role': 'function', 'name': 'ask_database', 'content': "[('Russia ',), ('Canada ',), ('United States ',), ('China ',), ('Brazil ',), ('Australia ',), ('India ',), ('Argentina ',), ('Kazakhstan ',), ('Sudan ',)]"}]}
+2025-02-21 09:36:32,532 - INFO - Received API response: 200
+2025-02-21 09:37:32,473 - INFO - Streamlit UI started successfully.
+2025-02-21 09:37:32,573 - INFO - Streamlit UI started successfully.
+2025-02-21 09:37:32,573 - INFO - User query submitted: Top 5 countries by GDP?
+2025-02-21 09:37:32,573 - INFO - Sending API request with payload: {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': 'Top 5 countries by GDP?'}], 'functions': [{'name': 'ask_database', 'description': 'Use this function to answer user questions about data. Output should be a fully formed SQL query.', 'parameters': {'type': 'object', 'properties': {'query': {'type': 'string', 'description': "\n                            SQL query extracting info to answer the user's question.\n                            SQL should be written using this database schema:\n                            \nTable: countries\nColumns: Country, Region, Population, Area, Pop. Density, Coastline, Net migration, Infant mortality, GDP, Literacy, Phones, Arable, Crops, Climate, Birthrate, Deathrate, Agriculture, Industry,Service\n\n                            The query should be returned in plain text, not in JSON.\n                            "}}, 'required': ['query']}}]}
+2025-02-21 09:37:33,972 - INFO - Received API response: 200
+2025-02-21 09:37:33,974 - INFO - Function generation requested, calling function
+2025-02-21 09:37:33,974 - INFO - Prepped query: {'query': 'SELECT Country, GDP FROM countries ORDER BY GDP DESC LIMIT 5;'}
+2025-02-21 09:37:33,974 - INFO - Executing SQL query: SELECT Country, GDP FROM countries ORDER BY GDP DESC LIMIT 5;
+2025-02-21 09:37:33,974 - INFO - Query executed successfully. Rows fetched: 5
+2025-02-21 09:37:33,974 - INFO - Sending API request with payload: {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': 'Top 5 countries by GDP?'}, {'role': 'function', 'name': 'ask_database', 'content': "[('Western Sahara ', ''), ('Luxembourg ', 55100), ('Norway ', 37800), ('United States ', 37800), ('Bermuda ', 36000)]"}]}
+2025-02-21 09:37:36,580 - INFO - Received API response: 200
+2025-02-21 09:46:56,132 - INFO - Application started successfully.
+2025-02-21 09:46:56,132 - INFO - Database schema loaded: 
+Table: countries
+Columns: Country, Region, Population, Area, Pop. Density, Coastline, Net migration, Infant mortality, GDP, Literacy, Phones, Arable, Crops, Climate, Birthrate, Deathrate, Agriculture, Industry,Service
+
+2025-02-21 09:46:56,132 - INFO - Streamlit UI started successfully.
+2025-02-21 09:46:58,480 - INFO - Streamlit UI started successfully.
+2025-02-21 09:47:09,613 - INFO - Streamlit UI started successfully.
+2025-02-21 09:47:09,688 - INFO - Streamlit UI started successfully.
+2025-02-21 09:47:09,688 - INFO - User query submitted: Top 5 countries by GDP
+
+2025-02-21 09:47:09,688 - INFO - Sending API request with payload: {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': 'Top 5 countries by GDP\n'}], 'functions': [{'name': 'ask_database', 'description': 'Use this function to answer user questions about data. Output should be a fully formed SQL query.', 'parameters': {'type': 'object', 'properties': {'query': {'type': 'string', 'description': "\n                            SQL query extracting info to answer the user's question.\n                            SQL should be written using this database schema:\n                            \nTable: countries\nColumns: Country, Region, Population, Area, Pop. Density, Coastline, Net migration, Infant mortality, GDP, Literacy, Phones, Arable, Crops, Climate, Birthrate, Deathrate, Agriculture, Industry,Service\n\n                            The query should be returned in plain text, not in JSON.\n                            "}}, 'required': ['query']}}]}
+2025-02-21 09:47:11,118 - INFO - Received API response: 200
+2025-02-21 09:47:11,118 - INFO - Function generation requested, calling function
+2025-02-21 09:47:11,118 - INFO - Executing SQL query: SELECT Country, GDP FROM countries ORDER BY GDP DESC LIMIT 5;
+2025-02-21 09:47:11,120 - INFO - Query executed successfully. Rows fetched: 5
+2025-02-21 09:47:11,120 - ERROR - Error processing chat response: 'choices'
+2025-02-21 09:47:32,134 - INFO - Streamlit UI started successfully.
+2025-02-21 09:47:32,220 - INFO - Streamlit UI started successfully.
+2025-02-21 09:47:32,224 - INFO - User query submitted: The biggest country in the world
+
+2025-02-21 09:47:42,217 - INFO - Streamlit UI started successfully.
+2025-02-21 09:47:52,929 - INFO - Streamlit UI started successfully.
+2025-02-21 09:47:53,005 - INFO - Streamlit UI started successfully.
+2025-02-21 09:47:53,007 - INFO - User query submitted: The biggest country in the world
+2025-02-21 09:47:53,007 - INFO - Sending API request with payload: {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': 'The biggest country in the world'}], 'functions': [{'name': 'ask_database', 'description': 'Use this function to answer user questions about data. Output should be a fully formed SQL query.', 'parameters': {'type': 'object', 'properties': {'query': {'type': 'string', 'description': "\n                            SQL query extracting info to answer the user's question.\n                            SQL should be written using this database schema:\n                            \nTable: countries\nColumns: Country, Region, Population, Area, Pop. Density, Coastline, Net migration, Infant mortality, GDP, Literacy, Phones, Arable, Crops, Climate, Birthrate, Deathrate, Agriculture, Industry,Service\n\n                            The query should be returned in plain text, not in JSON.\n                            "}}, 'required': ['query']}}]}
+2025-02-21 09:47:57,627 - INFO - Received API response: 200
+2025-02-21 09:47:57,627 - INFO - Function not required, responding to user
+2025-02-21 09:48:57,393 - INFO - Streamlit UI started successfully.
+2025-02-21 09:48:57,467 - INFO - Streamlit UI started successfully.
+2025-02-21 09:48:57,470 - INFO - User query submitted: The biggest country in the world by area
+2025-02-21 09:48:57,470 - INFO - Sending API request with payload: {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': 'The biggest country in the world by area'}], 'functions': [{'name': 'ask_database', 'description': 'Use this function to answer user questions about data. Output should be a fully formed SQL query.', 'parameters': {'type': 'object', 'properties': {'query': {'type': 'string', 'description': "\n                            SQL query extracting info to answer the user's question.\n                            SQL should be written using this database schema:\n                            \nTable: countries\nColumns: Country, Region, Population, Area, Pop. Density, Coastline, Net migration, Infant mortality, GDP, Literacy, Phones, Arable, Crops, Climate, Birthrate, Deathrate, Agriculture, Industry,Service\n\n                            The query should be returned in plain text, not in JSON.\n                            "}}, 'required': ['query']}}]}
+2025-02-21 09:48:59,033 - INFO - Received API response: 200
+2025-02-21 09:48:59,033 - INFO - Function generation requested, calling function
+2025-02-21 09:48:59,033 - INFO - Prepped query: {'query': 'SELECT Country, Area FROM countries ORDER BY Area DESC LIMIT 1;'}
+2025-02-21 09:48:59,033 - INFO - Executing SQL query: SELECT Country, Area FROM countries ORDER BY Area DESC LIMIT 1;
+2025-02-21 09:48:59,033 - INFO - Query executed successfully. Rows fetched: 1
+2025-02-21 09:48:59,034 - INFO - Sending API request with payload: {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': 'The biggest country in the world by area'}, {'role': 'function', 'name': 'ask_database', 'content': "[('Russia ', 17075200)]"}]}
+2025-02-21 09:48:59,899 - INFO - Received API response: 200
+2025-02-21 09:49:58,615 - INFO - Application started successfully.
+2025-02-21 09:49:58,615 - INFO - Database schema loaded: 
+Table: countries
+Columns: Country, Region, Population, Area, Pop. Density, Coastline, Net migration, Infant mortality, GDP, Literacy, Phones, Arable, Crops, Climate, Birthrate, Deathrate, Agriculture, Industry,Service
+
+y, Coastline, Net migration, Infant mortality, GDP, Literacy, Phones, Arable, Crops, Climate, Birthrate, Deathrate, Agriculture, Industry,Service
+
+2025-02-21 09:55:54,050 - INFO - Streamlit UI started successfully.
+2025-02-21 09:55:54,050 - INFO - User query submitted: Top 5 countries by area
+2025-02-21 09:55:54,050 - INFO - Sending API request with payload: {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': 'Top 5 countries by area'}], 'functions': [{'name': 'ask_database', 'description': 'Use this function to answer user questions about data. Output should be a fully formed SQL query.', 'parameters': {'type': 'object', 'properties': {'query': {'type': 'string', 'description': "\n                            SQL query extracting info to answer the user's question.\n                            SQL should be written using this database schema:\n                            \nTable: countries\nColumns: Country, Region, Population, Area, Pop. Density, Coastline, Net migration, Infant mortality, GDP, Literacy, Phones, Arable, Crops, Climate, Birthrate, Deathrate, Agriculture, Industry,Service\n\n                            The query should be returned in plain text, not in JSON.\n                            "}}, 'required': ['query']}}]}
+2025-02-21 09:55:55,623 - INFO - Received API response: 200
+2025-02-21 09:55:55,624 - INFO - Full API response: {'id': 'chatcmpl-B3FMpGDhMPMsmsxEUFC516sph6iee', 'object': 'chat.completion', 'created': 1740113755, 'model': 'gpt-4o-2024-08-06', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': None, 'function_call': {'name': 'ask_database', 'arguments': '{"query":"SELECT Country, Area FROM countries ORDER BY Area DESC LIMIT 5;"}'}, 'refusal': None}, 'logprobs': None, 'finish_reason': 'function_call'}], 'usage': {'prompt_tokens': 150, 'completion_tokens': 28, 'total_tokens': 178, 'prompt_tokens_details': {'cached_tokens': 0, 'audio_tokens': 0}, 'completion_tokens_details': {'reasoning_tokens': 0, 'audio_tokens': 0, 'accepted_prediction_tokens': 0, 'rejected_prediction_tokens': 0}}, 'service_tier': 'default', 'system_fingerprint': 'fp_eb9dce56a8'}
+2025-02-21 09:55:55,624 - INFO - Function generation requested, calling function
+2025-02-21 09:55:55,624 - INFO - Executing SQL query: SELECT Country, Area FROM countries ORDER BY Area DESC LIMIT 5;
+2025-02-21 09:55:55,624 - INFO - Query executed successfully. Rows fetched: 5
+2025-02-21 09:55:55,624 - ERROR - Error processing chat response: 'choices'
+2025-02-21 09:55:57,644 - INFO - Streamlit UI started successfully.
+2025-02-21 09:55:59,101 - INFO - Streamlit UI started successfully.
+2025-02-21 09:55:59,188 - INFO - Streamlit UI started successfully.
+2025-02-21 09:55:59,192 - INFO - User query submitted: Top 5 countries by area
+2025-02-21 09:55:59,192 - INFO - Sending API request with payload: {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': 'Top 5 countries by area'}], 'functions': [{'name': 'ask_database', 'description': 'Use this function to answer user questions about data. Output should be a fully formed SQL query.', 'parameters': {'type': 'object', 'properties': {'query': {'type': 'string', 'description': "\n                            SQL query extracting info to answer the user's question.\n                            SQL should be written using this database schema:\n                            \nTable: countries\nColumns: Country, Region, Population, Area, Pop. Density, Coastline, Net migration, Infant mortality, GDP, Literacy, Phones, Arable, Crops, Climate, Birthrate, Deathrate, Agriculture, Industry,Service\n\n                            The query should be returned in plain text, not in JSON.\n                            "}}, 'required': ['query']}}]}
+2025-02-21 09:56:00,103 - INFO - Received API response: 200
+2025-02-21 09:56:00,103 - INFO - Full API response: {'id': 'chatcmpl-B3FMum8089Pc1UXjF6kUmmcRewjSp', 'object': 'chat.completion', 'created': 1740113760, 'model': 'gpt-4o-2024-08-06', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': None, 'function_call': {'name': 'ask_database', 'arguments': '{"query":"SELECT Country, Area FROM countries ORDER BY Area DESC LIMIT 5;"}'}, 'refusal': None}, 'logprobs': None, 'finish_reason': 'function_call'}], 'usage': {'prompt_tokens': 150, 'completion_tokens': 28, 'total_tokens': 178, 'prompt_tokens_details': {'cached_tokens': 0, 'audio_tokens': 0}, 'completion_tokens_details': {'reasoning_tokens': 0, 'audio_tokens': 0, 'accepted_prediction_tokens': 0, 'rejected_prediction_tokens': 0}}, 'service_tier': 'default', 'system_fingerprint': 'fp_eb9dce56a8'}
+2025-02-21 09:56:00,103 - INFO - Function generation requested, calling function
+2025-02-21 09:56:00,103 - INFO - Executing SQL query: SELECT Country, Area FROM countries ORDER BY Area DESC LIMIT 5;
+2025-02-21 09:56:00,104 - INFO - Query executed successfully. Rows fetched: 5
+2025-02-21 09:56:00,104 - ERROR - Error processing chat response: 'choices'
+2025-02-21 09:56:05,251 - INFO - Streamlit UI started successfully.
+2025-02-21 09:56:05,251 - INFO - User query submitted: Top 5 countries by area
+2025-02-21 09:56:05,256 - INFO - Sending API request with payload: {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': 'Top 5 countries by area'}], 'functions': [{'name': 'ask_database', 'description': 'Use this function to answer user questions about data. Output should be a fully formed SQL query.', 'parameters': {'type': 'object', 'properties': {'query': {'type': 'string', 'description': "\n                            SQL query extracting info to answer the user's question.\n                            SQL should be written using this database schema:\n                            \nTable: countries\nColumns: Country, Region, Population, Area, Pop. Density, Coastline, Net migration, Infant mortality, GDP, Literacy, Phones, Arable, Crops, Climate, Birthrate, Deathrate, Agriculture, Industry,Service\n\n                            The query should be returned in plain text, not in JSON.\n                            "}}, 'required': ['query']}}]}
+2025-02-21 09:56:06,923 - INFO - Received API response: 200
+2025-02-21 09:56:06,923 - INFO - Full API response: {'id': 'chatcmpl-B3FN05UMV6MBkhFw1Mjk8p7Edrg5z', 'object': 'chat.completion', 'created': 1740113766, 'model': 'gpt-4o-2024-08-06', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': None, 'function_call': {'name': 'ask_database', 'arguments': '{"query":"SELECT Country, Area FROM countries ORDER BY Area DESC LIMIT 5;"}'}, 'refusal': None}, 'logprobs': None, 'finish_reason': 'function_call'}], 'usage': {'prompt_tokens': 150, 'completion_tokens': 28, 'total_tokens': 178, 'prompt_tokens_details': {'cached_tokens': 0, 'audio_tokens': 0}, 'completion_tokens_details': {'reasoning_tokens': 0, 'audio_tokens': 0, 'accepted_prediction_tokens': 0, 'rejected_prediction_tokens': 0}}, 'service_tier': 'default', 'system_fingerprint': 'fp_eb9dce56a8'}
+2025-02-21 09:56:06,923 - INFO - Function generation requested, calling function
+2025-02-21 09:56:06,923 - INFO - Executing SQL query: SELECT Country, Area FROM countries ORDER BY Area DESC LIMIT 5;
+2025-02-21 09:56:06,923 - INFO - Query executed successfully. Rows fetched: 5
+2025-02-21 09:56:06,923 - ERROR - Error processing chat response: 'choices'
+2025-02-21 09:57:01,830 - INFO - Application started successfully.
+2025-02-21 09:57:01,830 - INFO - Database schema loaded: 
+Table: countries
+Columns: Country, Region, Population, Area, Pop. Density, Coastline, Net migration, Infant mortality, GDP, Literacy, Phones, Arable, Crops, Climate, Birthrate, Deathrate, Agriculture, Industry,Service
+
+2025-02-21 09:57:01,830 - INFO - Streamlit UI started successfully.
+2025-02-21 09:57:10,224 - INFO - Streamlit UI started successfully.
+2025-02-21 09:57:10,337 - INFO - Streamlit UI started successfully.
+2025-02-21 09:57:10,339 - INFO - User query submitted: Top 5 countries by area
+2025-02-21 09:57:10,339 - INFO - Sending API request with payload: {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': 'Top 5 countries by area'}], 'functions': [{'name': 'ask_database', 'description': 'Use this function to answer user questions about data. Output should be a fully formed SQL query.', 'parameters': {'type': 'object', 'properties': {'query': {'type': 'string', 'description': "\n                            SQL query extracting info to answer the user's question.\n                            SQL should be written using this database schema:\n                            \nTable: countries\nColumns: Country, Region, Population, Area, Pop. Density, Coastline, Net migration, Infant mortality, GDP, Literacy, Phones, Arable, Crops, Climate, Birthrate, Deathrate, Agriculture, Industry,Service\n\n                            The query should be returned in plain text, not in JSON.\n                            "}}, 'required': ['query']}}]}
+2025-02-21 09:57:11,801 - INFO - Received API response: 200
+2025-02-21 09:57:11,801 - INFO - Function generation requested, calling function
+2025-02-21 09:57:11,801 - INFO - Prepped query: {'query': 'SELECT Country, Area FROM countries ORDER BY Area DESC LIMIT 5;'}
+2025-02-21 09:57:11,801 - INFO - Executing SQL query: SELECT Country, Area FROM countries ORDER BY Area DESC LIMIT 5;
+2025-02-21 09:57:11,802 - INFO - Query executed successfully. Rows fetched: 5
+2025-02-21 09:57:11,802 - INFO - Sending API request with payload: {'model': 'gpt-4o', 'messages': [{'role': 'user', 'content': 'Top 5 countries by area'}, {'role': 'function', 'name': 'ask_database', 'content': "[('Russia ', 17075200), ('Canada ', 9984670), ('United States ', 9631420), ('China ', 9596960), ('Brazil ', 8511965)]"}]}
+2025-02-21 09:57:13,608 - INFO - Received API response: 200
